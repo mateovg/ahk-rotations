@@ -20,7 +20,7 @@ class Ability:
             ahk_string += " ".join(up)
         for key in self.keybind:
             if key in modifiers:
-                ahk_string += f"Send, {{{key}Up}}\n"
+                ahk_string += f"Send, {{{key} Up}}\n"
         return ahk_string
 
 
