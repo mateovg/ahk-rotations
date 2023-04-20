@@ -54,7 +54,7 @@ def create_ahk(rotation):
             # get keybind from keybinds dict
             if (tick - current_tick) != 0:
                 f.write(
-                    f"Sleep {((tick - current_tick) * 590 )}\n")
+                    f"Sleep {((tick - current_tick) * 600 - 150 )}\n")  # send inputs 100 ms before tick
             f.write(ability.to_ahk())
             current_tick = tick
 
